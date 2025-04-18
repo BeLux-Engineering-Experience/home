@@ -22,3 +22,5 @@ body:
         - label: Modern Workplace
         - label: Dynamics 365
         - label: Other
+    validations:
+      required: true
