@@ -3,6 +3,7 @@ on:
   issues:
     types:
       - opened
+      - edited
 
 permissions:
   issues: write
@@ -13,17 +14,18 @@ jobs:
   parse-issue:
     if: contains(github.event.issue.labels.*.name, 'Onboarding')
     runs-on: ubuntu-latest
-    # outputs:
-    #   repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
-    #   solutionAreas: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas }}
+    outputs:
+      repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
+      solutionAreas:
+        ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas }}
     steps:
       - uses: actions/checkout@v4
       - name: Issue form parser
         id: parse
         uses: edumserrano/github-issue-forms-parser@v1.3.7
         with:
-          template-filepath: '.github/ISSUE_TEMPLATE/onboard_repo.yml'
-          issue-form-body: '${{ github.event.issue.body }}'
+          template-filepath: ".github/ISSUE_TEMPLATE/onboard_repo.yml"
+          issue-form-body: "${{ github.event.issue.body }}"
 
       - name: Show parsed payload data
         run: |
@@ -32,11 +34,14 @@ jobs:
           echo '${{ steps.parse.outputs.parsed-issue }}'
 
       - name: Comment with inputs
-        if: github.event.action == 'opened' 
+        if: github.event.action == 'opened'
         uses: peter-evans/create-or-update-comment@v3.0.2
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
             **Starting the onboarding of the repository following parameters:**
             * Repo URL: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
-            * Solution areas: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas }}
+            * Solution areas: 
+              ```json
+              ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
+              ```
