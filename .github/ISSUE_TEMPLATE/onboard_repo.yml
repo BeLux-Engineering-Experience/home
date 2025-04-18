@@ -10,17 +10,17 @@ body:
       description: URL of you public repository
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: solution-areas
     attributes:
       label: Related solution areas (CTRL + click to select multiple)
-      multiple: true
       options:
-        - Infrastructure
-        - Application Innovation
-        - Data & AI
-        - Security
-        - Modern Workplace
-        - Dynamics 365
+        - label: Infrastructure
+        - label: Application Innovation
+        - label: Data & AI
+        - label: Security
+        - label: Modern Workplace
+        - label: Dynamics 365
+        - label: Other
     validations:
       required: true
