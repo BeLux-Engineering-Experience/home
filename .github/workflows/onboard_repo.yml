@@ -142,7 +142,7 @@ jobs:
 
           # If the repo URL was not found, add it as a new row
           if not updated:
-            new_row = {"repo-url": repo_url, "repo-description": '"'+repo_description+'"' , **solution_areas}
+            new_row = {"repo-url": repo_url, "repo-description": repo_description , **solution_areas}
             rows.append(new_row)
 
           # Write the updated data back to the CSV file

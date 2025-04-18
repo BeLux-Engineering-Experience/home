@@ -38,7 +38,7 @@ with open(csv_file_path, "r") as csvfile:
             "modern-workplace": row.get("modern-workplace", "").lower() == "true",
             "dynamics-365": row.get("dynamics-365", "").lower() == "true",
             "other": row.get("other", "").lower() == "true",
-            "description": row.get("description", ""),
+            "description": row.get("repo-description", ""),
         })
 
 # Generate a string with the current date and time
@@ -47,8 +47,10 @@ last_generated = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 # Render the template with repository data
 output = template.render(repos=repos, solution_area_mapping=solution_area_mapping, last_generated=last_generated)
 
+print(output)
+
 readme_file_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
 # Write the rendered content to README.md
-with open(readme_file_path, "w") as readme_file:
-    readme_file.write(output)
+with open(readme_file_path, "wb") as readme_file:
+    readme_file.write(output.encode("utf-8"))
 

@@ -8,19 +8,19 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 {% for solution_area_id, solution_area_display_name in solution_area_mapping.items() %}
 {% set solaRepos = repos | selectattr(solution_area_id) | list %}
 ## {{ solution_area_display_name }} repositories
-| Repository Title | Repository URL | Other related areas |
-|------------------|----------------|--------------------|{% for repo in solaRepos %}
-| {{ repo.title }} | [{{ repo.url }}]({{ repo.url }}) | {% for sola in possible_solution_areas %}{% if repo[sola] and sola != solution_area_id %}`{{ solution_area_mapping[sola] }}` {% endif %}{% endfor %} |{% endfor %}
+| Repository Title | Repository URL | Description | Other related areas |
+|------------------|----------------|-------------|--------------------|{% for repo in solaRepos %}
+| {{ repo.title }} | [{{ repo.url }}]({{ repo.url }}) | {{ repo.description }} | {% for sola in possible_solution_areas %}{% if repo[sola] and sola != solution_area_id %}`{{ solution_area_mapping[sola] }}` {% endif %}{% endfor %} |{% endfor %}
 {% endfor %}
 
 
 ----
 ## All repositories
-| Repository Title | Repository URL | Main Contributor |
-|------------------|----------------|-------------------|{% for repo in repos %}
-| {{ repo.title }} | [{{ repo.url }}]({{ repo.url }}) | {{ repo.main_contributor }} |{% endfor %}
+| Repository Title | Repository URL | Description | Main Contributor |
+|------------------|----------------|-------------|-------------------|{% for repo in repos %}
+| {{ repo.title }} | [{{ repo.url }}]({{ repo.url }}) | {{ repo.description }} | {{ repo.main_contributor }} |{% endfor %}
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: {{ last_geneated }}
+**Last updated**: {{ last_generated }}
