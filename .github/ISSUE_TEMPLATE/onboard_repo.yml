@@ -13,7 +13,7 @@ body:
   - type: dropdown
     id: solution-areas
     attributes:
-      label: Related solution areas
+      label: Related solution areas (CTRL + click to select multiple)
       multiple: true
       options:
         - Infrastructure
