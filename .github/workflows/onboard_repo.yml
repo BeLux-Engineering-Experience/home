@@ -1,4 +1,4 @@
-name: ⛵ Create ACA
+name: ⛵ Onboard repo
 on:
   issues:
     types:
