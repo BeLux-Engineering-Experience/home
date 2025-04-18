@@ -5,7 +5,6 @@ on:
       - opened
       - edited
       - closed
-      - deleted
 
 permissions:
   issues: write
@@ -218,7 +217,7 @@ jobs:
 
           # Write the updated data back to the CSV file
           with open(file_path, mode="w", newline="", encoding="utf-8") as csvfile:
-            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other"]
+            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other", "repo-description"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
