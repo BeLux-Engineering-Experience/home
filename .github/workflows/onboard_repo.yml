@@ -60,6 +60,53 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - uses: actions4git/setup-git@v1
+        name: Setup git
+        with:
+          user: GitHub Actions
+          user-name: GitHub Actions
+      - name: Add repository to community
+        run: |
+          import csv
+
+          repo_url = "${{ needs.parse-issue.outputs.repoUrl }}"
+          solution_areas = {
+            "infrastructure": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).infrastructure }},
+            "application-innovation": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).application-innovation }},
+            "security": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).security }},
+            "data-ai": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).data-ai }},
+            "modern-work": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).modern-work }},
+            "dynamics-365": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).dynamics-365 }},
+            "other": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).other }}
+          }
+
+          file_path = "repo-urls.csv"
+          updated = False
+          rows = []
+
+          # Read the CSV file and update if the repo URL exists
+          with open(file_path, mode="r", newline="", encoding="utf-8") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+              if row["repo-url"] == repo_url:
+                row.update(solution_areas)
+                updated = True
+              rows.append(row)
+
+          # If the repo URL was not found, add it as a new row
+          if not updated:
+            new_row = {"repo-url": repo_url, **solution_areas}
+            rows.append(new_row)
+
+          # Write the updated data back to the CSV file
+          with open(file_path, mode="w", newline="", encoding="utf-8") as csvfile:
+            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-work", "dynamics-365", "other"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+        shell: python
+
       - name: Add repo to community
         run: |
           echo "Adding repository ${{ needs.parse-issue.outputs.repoUrl }} to the Belux Engineering Experience community..."
@@ -67,8 +114,6 @@ jobs:
           # For example, you could use a GitHub API call or a script to perform the action.
           # This is just a placeholder for demonstration purposes.
           echo "${{ needs.parse-issue.outputs.repoUrl }}" >> repo-urls.csv
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "xxx@xxx.xxx"
           git add repo-urls.csv
           git commit -m "Add repository ${{ needs.parse-issue.outputs.repoUrl }} to the community"
           git push origin main
