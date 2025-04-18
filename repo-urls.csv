@@ -1,1 +1,3 @@
-https://github.com/nvandewalle/tub
+repo-url,infrastructure,application-innovation,security,data-ai,modern-work,dynamics-365,other
+https://github.com/nvandewalle/tub,true,true,false,false,false,false,false
+https://github.com/nvandewalle/espp-tob,true,true,false,false,false,false,false
