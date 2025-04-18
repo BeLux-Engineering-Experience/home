@@ -1,5 +1,5 @@
 
-name: CI
+name: 🚧 Generate README
 on:
   workflow_dispatch:
 
