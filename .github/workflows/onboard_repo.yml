@@ -22,7 +22,9 @@ jobs:
         ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
     steps:
       - name: Remove failure label
-        if: github.event.action == 'edited'
+        if:
+          contains(github.event.issue.labels.*.name, 'failure') &&
+          github.event.action == 'edited'
         uses: actions/github-script@v6
         with:
           script: |
