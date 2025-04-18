@@ -8,7 +8,7 @@ on:
 permissions:
   issues: write
   id-token: write
-  contents: read
+  contents: write
 
 jobs:
   parse-issue:
@@ -52,3 +52,30 @@ jobs:
 
             **Next steps:**
             ⏭️ The repository is being added to the Belux Engineering Experience community. You will be notified when the process is finished.
+
+  add-repo-to-community:
+    if: contains(github.event.issue.labels.*.name, 'Onboarding')
+    needs: parse-issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add repo to community
+        run: |
+          echo "Adding repository ${{ needs.parse-issue.outputs.repoUrl }} to the Belux Engineering Experience community..."
+          # Here you would add the logic to add the repository to the community.
+          # For example, you could use a GitHub API call or a script to perform the action.
+          # This is just a placeholder for demonstration purposes.
+          echo "${{ needs.parse-issue.outputs.repoUrl }}" >> repo-urls.csv
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "xxx@xxx.xxx"
+          git add repo-urls.csv
+          git commit -m "Add repository ${{ needs.parse-issue.outputs.repoUrl }} to the community"
+          git push origin main
+          echo "Repository added successfully!"
+
+      - name: Comment with success message
+        uses: peter-evans/create-or-update-comment@v3.0.2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Onboarding process completed!**
+            The repository has been successfully added to the Belux Engineering Experience community. Thank you for your contribution! 🎉
