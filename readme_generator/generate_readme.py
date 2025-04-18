@@ -2,6 +2,16 @@ import jinja2
 import csv
 import os
 
+solution_area_mapping = {
+    "application-innovation": "Application Innovation",
+    "infrastructure": "Infrastructure",
+    "data-ai": "Data & AI",
+    "security": "Security",
+    "modern-workplace": "Modern Workplace",
+    "dynamics-365": "Dynamics 365",
+    "other": "Other",
+}
+
 environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(searchpath="readme_generator"),  # Adjusted search path
     autoescape=jinja2.select_autoescape(['html', 'xml', 'jinja'])
@@ -18,13 +28,20 @@ with open(csv_file_path, "r") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         repos.append({
-            "title": row["repo-url"].split("/")[-1],
-            "url": row["repo-url"],
-            "main_contributor": "Unknown"  # Placeholder for main contributor
+            "title": row.get("repo-url", "").split("/")[-1],
+            "url": row.get("repo-url", ""),
+            "application-innovation": row.get("application-innovation", "").lower() == "true",
+            "infrastructure": row.get("infrastructure", "").lower() == "true",
+            "data-ai": row.get("data-ai", "").lower() == "true",
+            "security": row.get("security", "").lower() == "true",
+            "modern-workplace": row.get("modern-workplace", "").lower() == "true",
+            "dynamics-365": row.get("dynamics-365", "").lower() == "true",
+            "other": row.get("other", "").lower() == "true",
+            "description": row.get("description", ""),
         })
 
 # Render the template with repository data
-output = template.render(repos=repos)
+output = template.render(repos=repos, solution_area_mapping=solution_area_mapping)
 
 readme_file_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
 # Write the rendered content to README.md
