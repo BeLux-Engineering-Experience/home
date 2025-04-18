@@ -4,6 +4,8 @@ on:
     types:
       - opened
       - edited
+      - closed
+      - deleted
 
 permissions:
   issues: write
@@ -54,7 +56,9 @@ jobs:
             ⏭️ The repository is being added to the Belux Engineering Experience community. You will be notified when the process is finished.
 
   add-repo-to-community:
-    if: contains(github.event.issue.labels.*.name, 'Onboarding')
+    if:
+      contains(github.event.issue.labels.*.name, 'Onboarding') &&
+      (github.event.action == 'opened' || github.event.action == 'edited')
     needs: parse-issue
     runs-on: ubuntu-latest
     steps:
@@ -76,6 +80,8 @@ jobs:
             "dynamics-365": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).dynamics-365 }}",
             "other": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).other }}"
           }
+
+
 
           file_path = "repo-urls.csv"
           updated = False
@@ -118,3 +124,50 @@ jobs:
           body: |
             **Onboarding process completed!**
             The repository has been successfully added to the Belux Engineering Experience community. Thank you for your contribution! 🎉
+  remove-repo-from-community:
+    if: (github.event.action == 'closed') || (github.event.action == 'deleted')
+    needs: parse-issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - uses: actions4git/setup-git@v1
+        name: Setup git
+      - name: Remove repository from community
+        run: |
+          import csv
+
+          repo_url = "${{ needs.parse-issue.outputs.repoUrl }}"
+          file_path = "repo-urls.csv"
+          rows = []
+
+          # Read the CSV file and remove the repo URL if it exists
+          with open(file_path, mode="r", newline="", encoding="utf-8") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+              if row["repo-url"] != repo_url:
+                rows.append(row)
+
+          # Write the updated data back to the CSV file
+          with open(file_path, mode="w", newline="", encoding="utf-8") as csvfile:
+            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+        shell: python
+
+      - name: Commit and push
+        run: |
+          git add repo-urls.csv
+          git commit -m "Remove repository ${{ needs.parse-issue.outputs.repoUrl }} from the community"
+          git push origin main
+          echo "Repository removed successfully!"
+
+      - name: Comment with success message
+        uses: peter-evans/create-or-update-comment@v3.0.2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Offboarding process completed!**
+            The repository has been successfully removed from the Belux Engineering Experience community 😢
