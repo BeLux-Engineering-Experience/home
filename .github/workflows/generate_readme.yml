@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v4.9.1
-      - run: pip install -r requirements.txt
+      - run: pip install -r readme_generator/requirements.txt
       - run: python readme_generator/generate_readme.py
       - uses: actions4git/setup-git@v1
         name: Setup git
