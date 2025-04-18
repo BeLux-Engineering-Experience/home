@@ -109,11 +109,6 @@ jobs:
 
       - name: Add repo to community
         run: |
-          echo "Adding repository ${{ needs.parse-issue.outputs.repoUrl }} to the Belux Engineering Experience community..."
-          # Here you would add the logic to add the repository to the community.
-          # For example, you could use a GitHub API call or a script to perform the action.
-          # This is just a placeholder for demonstration purposes.
-          echo "${{ needs.parse-issue.outputs.repoUrl }}" >> repo-urls.csv
           git add repo-urls.csv
           git commit -m "Add repository ${{ needs.parse-issue.outputs.repoUrl }} to the community"
           git push origin main
