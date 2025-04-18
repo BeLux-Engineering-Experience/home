@@ -244,9 +244,42 @@ jobs:
             **Offboarding process completed!**
             The repository has been successfully removed from the Belux Engineering Experience community 😢
 
+  get-repo-information:
+    if: github.event.action == 'opened' || github.event.action == 'edited'
+    needs: parse-issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository information
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const repoUrl = "${{ needs.parse-issue.outputs.repoUrl }}";
+            const repoName = repoUrl.split("/").slice(-2).join("/");
+            const [owner, repo] = repoName.split("/");
+
+            const { data: repoData } = await github.rest.repos.get({
+              owner,
+              repo
+            });
+            console.log(repoData);
+            return {
+              name: repoData.name,
+              description: repoData.description,
+              url: repoData.html_url,
+              stars: repoData.stargazers_count,
+              forks: repoData.forks_count,
+              issues: repoData.open_issues_count
+            };
+
   comment-on-failure:
     if: failure()
-    needs: [parse-issue, add-repo-to-community, remove-repo-from-community]
+    needs:
+      [
+        parse-issue,
+        add-repo-to-community,
+        remove-repo-from-community,
+        get-repo-information,
+      ]
     runs-on: ubuntu-latest
     steps:
       - name: Comment on failure
