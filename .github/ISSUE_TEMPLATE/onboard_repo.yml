@@ -1,0 +1,26 @@
+name: 🧑‍💻 Onboard my repository
+description: Add a repository to the Belux Engineering Experience community.
+title: "[Onboarding] Adding new repository"
+labels: ["Onboarding"]
+body:
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository Url
+      description: URL of you public repository
+    validations:
+      required: true
+  - type: dropdown
+    id: solution-areas
+    attributes:
+      label: Related solution areas
+      multiple: true
+      options:
+        - Infrastructure
+        - Application Innovation
+        - Data & AI
+        - Security
+        - Modern Workplace
+        - Dynamics 365
+    validations:
+      required: true
