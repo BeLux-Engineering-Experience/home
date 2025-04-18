@@ -7,5 +7,4 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository Title | Repository URL | Main Contributor |
 |------------------|----------------|-------------------|
 | espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | Unknown |
-
 | aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) | Unknown |
