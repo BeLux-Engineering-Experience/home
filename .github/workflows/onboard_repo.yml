@@ -244,7 +244,7 @@ jobs:
     needs: [parse-issue, url-validator]
     runs-on: ubuntu-latest
     outputs:
-      description: ${{ steps.get-description.outputs.result }}
+      description: ${{ fromJson(steps.get-description.outputs.result) }}
     steps:
       - name: Get repository information
         id: get-description
@@ -260,6 +260,7 @@ jobs:
               repo
             });
             console.log(repoData);
+            console.log("Description:", repoData.description);
             return repoData.description;
 
   comment-on-failure:
