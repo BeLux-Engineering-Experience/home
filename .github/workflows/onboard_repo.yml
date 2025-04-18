@@ -1,0 +1,41 @@
+name: ⛵ Create ACA
+on:
+  issues:
+    types:
+      - opened
+
+permissions:
+  issues: write
+  id-token: write
+  contents: read
+
+jobs:
+  parse-issue:
+    if: contains(github.event.issue.labels.*.name, 'Onboarding')
+    runs-on: ubuntu-latest
+    # outputs:
+    #   repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
+    #   solutionAreas: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas }}
+    steps:
+      - name: Issue form parser
+        id: parse
+        uses: edumserrano/github-issue-forms-parser@v1.3.7
+        with:
+          template-filepath: .github/ISSUE_TEMPLATE/onboard_repo.yml
+          issue-form-body: '${{ github.event.issue.body }}'
+
+      - name: Show parsed payload data
+        run: |
+          # Using the character `'` to prevent all characters enclosed within
+          # them from being treated as special characters (e.g. $ or `)
+          echo '${{ steps.parse.outputs.parsed-issue }}'
+
+      - name: Comment with inputs
+        if: github.event.action == 'opened' 
+        uses: peter-evans/create-or-update-comment@v3.0.2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **Starting the onboarding of the repository following parameters:**
+            * Repo URL: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
+            * Solution areas: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas }}
