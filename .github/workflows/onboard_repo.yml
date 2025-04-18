@@ -14,7 +14,6 @@ permissions:
 
 jobs:
   parse-issue:
-    if: contains(github.event.issue.labels.*.name, 'onboarding')
     runs-on: ubuntu-latest
     outputs:
       repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
@@ -22,9 +21,7 @@ jobs:
         ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
     steps:
       - name: Remove failure label
-        if:
-          contains(github.event.issue.labels.*.name, 'failure') &&
-          github.event.action == 'edited'
+        if: contains(github.event.issue.labels.*.name, 'failure')
         uses: actions/github-script@v6
         with:
           script: |
@@ -69,9 +66,7 @@ jobs:
             ⏭️ The repository is being added to the Belux Engineering Experience community. You will be notified when the process is finished.
 
   url-validator:
-    if:
-      contains(github.event.issue.labels.*.name, 'Onboarding') &&
-      (github.event.action == 'opened' || github.event.action == 'edited')
+    if: github.event.action == 'opened' || github.event.action == 'edited'
     needs: parse-issue
     runs-on: ubuntu-latest
     steps:
@@ -108,10 +103,8 @@ jobs:
             ⏭️ Adding the repository to the Belux Engineering Experience community. You will be notified when the process is finished.
 
   add-repo-to-community:
-    if:
-      contains(github.event.issue.labels.*.name, 'Onboarding') &&
-      (github.event.action == 'opened' || github.event.action == 'edited')
-    needs: ["parse-issue", "url-validator"]
+    if: github.event.action == 'opened' || github.event.action == 'edited'
+    needs: ["parse-issue", "url-validator", "get-repo-description"]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -124,6 +117,7 @@ jobs:
           import requests
 
           repo_url = "${{ needs.parse-issue.outputs.repoUrl }}"
+          repo_description = "${{ needs.get-repo-description.outputs.description }}"
           solution_areas = {
             "infrastructure": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).infrastructure }}",
             "application-innovation": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).application-innovation }}",
@@ -149,12 +143,12 @@ jobs:
 
           # If the repo URL was not found, add it as a new row
           if not updated:
-            new_row = {"repo-url": repo_url, **solution_areas}
+            new_row = {"repo-url": repo_url, "repo-description": repo_description , **solution_areas}
             rows.append(new_row)
 
           # Write the updated data back to the CSV file
           with open(file_path, mode="w", newline="", encoding="utf-8") as csvfile:
-            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other"]
+            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other", "repo-description"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
@@ -246,12 +240,15 @@ jobs:
             **Offboarding process completed!**
             The repository has been successfully removed from the Belux Engineering Experience community 😢
 
-  get-repo-information:
+  get-repo-description:
     if: github.event.action == 'opened' || github.event.action == 'edited'
-    needs: parse-issue
+    needs: [parse-issue, url-validator]
     runs-on: ubuntu-latest
+    outputs:
+      description: ${{ steps.get-description.outputs.result }}
     steps:
       - name: Get repository information
+        id: get-description
         uses: actions/github-script@v6
         with:
           script: |
@@ -264,14 +261,7 @@ jobs:
               repo
             });
             console.log(repoData);
-            return {
-              name: repoData.name,
-              description: repoData.description,
-              url: repoData.html_url,
-              stars: repoData.stargazers_count,
-              forks: repoData.forks_count,
-              issues: repoData.open_issues_count
-            };
+            return repoData.description;
 
   comment-on-failure:
     if: failure()
@@ -280,7 +270,7 @@ jobs:
         parse-issue,
         add-repo-to-community,
         remove-repo-from-community,
-        get-repo-information,
+        get-repo-description,
       ]
     runs-on: ubuntu-latest
     steps:
