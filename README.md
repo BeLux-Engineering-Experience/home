@@ -10,15 +10,11 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Application Innovation repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
-| espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | `Infrastructure`  |
-| aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) | `Infrastructure`  |
 
 
 ## Infrastructure repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
-| espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | `Application Innovation`  |
-| aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) | `Application Innovation`  |
 
 
 ## Data &amp; AI repositories
@@ -44,7 +40,6 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Other repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
-| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) |  |
 
 
 
@@ -52,9 +47,6 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## All repositories
 | Repository Title | Repository URL | Main Contributor |
 |------------------|----------------|-------------------|
-| espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) |  |
-| aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) |  |
-| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) |  |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
