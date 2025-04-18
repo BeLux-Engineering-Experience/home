@@ -58,6 +58,8 @@ jobs:
     needs: parse-issue
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Add repo to community
         run: |
           echo "Adding repository ${{ needs.parse-issue.outputs.repoUrl }} to the Belux Engineering Experience community..."
