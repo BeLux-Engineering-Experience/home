@@ -17,7 +17,7 @@ jobs:
     outputs:
       repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
       solutionAreas:
-        ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas }}
+        ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
     steps:
       - uses: actions/checkout@v4
       - name: Issue form parser
