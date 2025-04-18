@@ -1,6 +1,7 @@
 import jinja2
 import csv
 import os
+from datetime import datetime
 
 solution_area_mapping = {
     "application-innovation": "Application Innovation",
@@ -40,8 +41,11 @@ with open(csv_file_path, "r") as csvfile:
             "description": row.get("description", ""),
         })
 
+# Generate a string with the current date and time
+last_generated = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
 # Render the template with repository data
-output = template.render(repos=repos, solution_area_mapping=solution_area_mapping)
+output = template.render(repos=repos, solution_area_mapping=solution_area_mapping, last_generated=last_generated)
 
 readme_file_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
 # Write the rendered content to README.md
