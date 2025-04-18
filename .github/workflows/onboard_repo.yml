@@ -34,7 +34,7 @@ jobs:
           echo '${{ steps.parse.outputs.parsed-issue }}'
 
       - name: Comment with inputs
-        if: github.event.action == 'opened'
+        if: github.event.action == 'opened' || github.event.action == 'edited'
         uses: peter-evans/create-or-update-comment@v3.0.2
         with:
           issue-number: ${{ github.event.issue.number }}
