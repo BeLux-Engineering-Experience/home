@@ -43,6 +43,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Other repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
+| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) |  |
 
 
 
@@ -52,3 +53,4 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|----------------|-------------------|
 | espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) |  |
 | aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) |  |
+| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) |  |
