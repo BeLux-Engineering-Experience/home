@@ -10,13 +10,14 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Application Innovation repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
-| espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) |  |
+| espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | `Infrastructure`  |
 | aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) | `Infrastructure`  |
 
 
 ## Infrastructure repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
+| espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | `Application Innovation`  |
 | aks-istio-multi-cluster | [https://github.com/nvandewalle/aks-istio-multi-cluster](https://github.com/nvandewalle/aks-istio-multi-cluster) | `Application Innovation`  |
 
 
