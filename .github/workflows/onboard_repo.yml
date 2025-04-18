@@ -192,6 +192,13 @@ jobs:
 
             Check the workflow run for detailed information: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
+      - name: Get failre message
+
+        run: |
+          gh auth login 
+          gh run view ${{ github.run_id }} -R ${{ github.repository }}
+          echo "[INFO]: Logs from failed job are found below"
+          gh run view ${{ github.run_id }} --log-failed -R ${{ github.repository }}
       - name: Label failure
         uses: actions/github-script@v6
         with:
