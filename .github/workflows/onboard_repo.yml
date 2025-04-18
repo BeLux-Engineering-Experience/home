@@ -69,6 +69,7 @@ jobs:
       - name: Add repository to community
         run: |
           import csv
+          import requests
 
           repo_url = "${{ needs.parse-issue.outputs.repoUrl }}"
           solution_areas = {
@@ -81,6 +82,11 @@ jobs:
             "other": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).other }}"
           }
 
+
+
+          response = requests.get(repo_url)
+          if response.status_code != 200:
+            raise Exception(f"The repository link {repo_url} is invalid. HTTP status code: {response.status_code}")
 
 
           file_path = "repo-urls.csv"
