@@ -177,3 +177,28 @@ jobs:
           body: |
             **Offboarding process completed!**
             The repository has been successfully removed from the Belux Engineering Experience community 😢
+
+  comment-on-failure:
+    if: failure()
+    needs: [parse-issue, add-repo-to-community, remove-repo-from-community]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on failure
+        uses: peter-evans/create-or-update-comment@v3.0.2
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ⛔ **The onboarding has failed.**
+
+            Check the workflow run for detailed information: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Label failure
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: ${{ github.event.issue.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["failure"]
+            })
