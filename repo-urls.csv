@@ -1,4 +1,1 @@
-repo-url,infrastructure,application-innovation,security,data-ai,modern-workplace,dynamics-365,other
-https://github.com/nvandewalle/espp-tob-calculator,true,true,false,false,false,false,false
-https://github.com/nvandewalle/aks-istio-multi-cluster,true,true,false,false,false,false,false
-https://github.com/nvandewalle/azure-health-check,false,false,false,false,false,false,true
+repo-url,infrastructure,application-innovation,security,data-ai,modern-workplace,dynamics-365,other,repo-description
