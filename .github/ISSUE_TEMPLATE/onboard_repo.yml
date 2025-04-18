@@ -13,7 +13,7 @@ body:
   - type: checkboxes
     id: solution-areas
     attributes:
-      label: Related solution areas (CTRL + click to select multiple)
+      label: Related solution areas
       options:
         - label: Infrastructure
         - label: Application Innovation
