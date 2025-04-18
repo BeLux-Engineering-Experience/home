@@ -70,7 +70,9 @@ jobs:
           response = requests.get(repo_url)
 
           if response.status_code != 200:
-            raise Exception(f"Invalid URL: {repo_url}")
+            raise Exception(f"Invalid repository URL: {repo_url}. Status code: {response.status_code}")
+          else:
+            print(f"Valid repository URL: {repo_url}. Status code: {response.status_code}")
 
         shell: python
       - name: Comment with success message
