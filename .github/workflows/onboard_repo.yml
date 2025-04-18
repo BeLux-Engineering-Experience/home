@@ -72,7 +72,7 @@ jobs:
             "application-innovation": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).application-innovation }},
             "security": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).security }},
             "data-ai": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).data-ai }},
-            "modern-work": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).modern-work }},
+            "modern-workplace": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).modern-workplace }},
             "dynamics-365": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).dynamics-365 }},
             "other": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).other }}
           }
@@ -97,7 +97,7 @@ jobs:
 
           # Write the updated data back to the CSV file
           with open(file_path, mode="w", newline="", encoding="utf-8") as csvfile:
-            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-work", "dynamics-365", "other"]
+            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
