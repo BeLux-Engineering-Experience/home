@@ -15,6 +15,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Infrastructure repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
+| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) |  |
 
 
 ## Data &amp; AI repositories
@@ -40,6 +41,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Other repositories
 | Repository Title | Repository URL | Other related areas |
 |------------------|----------------|--------------------|
+| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) | `Infrastructure`  |
 
 
 
@@ -47,6 +49,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## All repositories
 | Repository Title | Repository URL | Main Contributor |
 |------------------|----------------|-------------------|
+| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) |  |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
