@@ -21,7 +21,7 @@ jobs:
         id: parse
         uses: edumserrano/github-issue-forms-parser@v1.3.7
         with:
-          template-filepath: .github/ISSUE_TEMPLATE/onboard_repo.yml
+          template-filepath: '.github/ISSUE_TEMPLATE/onboard_repo.yml'
           issue-form-body: '${{ github.event.issue.body }}'
 
       - name: Show parsed payload data
