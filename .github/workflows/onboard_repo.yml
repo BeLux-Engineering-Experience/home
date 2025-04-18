@@ -40,8 +40,15 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             **Starting the onboarding of the repository following parameters:**
-            * Repo URL: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
-            * Solution areas: 
-              ```json
-              ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
-              ```
+            Repo URL: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
+            Solution areas: 
+            * Infrastructure: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.infrastructure && '✅' || '⛔' }}
+            * Application Innovation: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.application-innovation && '✅' || '⛔' }}
+            * Data & AI: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.data-ai && '✅' || '⛔' }}
+            * Security: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.security && '✅' || '⛔' }}
+            * Modern Workplace: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.modern-workplace && '✅' || '⛔' }}
+            * Dynamics 365: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.dynamics-365 && '✅' || '⛔' }}
+            * Other: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.other && '✅' || '⛔' }}
+
+            **Next steps:**
+            ⏭️ The repository is being added to the Belux Engineering Experience community. You will be notified when the process is finished.
