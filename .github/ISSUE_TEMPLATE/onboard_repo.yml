@@ -1,7 +1,7 @@
 name: 🧑‍💻 Onboard my repository
 description: Add a repository to the Belux Engineering Experience community.
 title: "[Onboarding] Adding new repository"
-labels: ["Onboarding"]
+labels: ["onboarding"]
 body:
   - type: input
     id: repo-url

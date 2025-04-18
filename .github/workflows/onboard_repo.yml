@@ -21,6 +21,17 @@ jobs:
       solutionAreas:
         ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
     steps:
+      - name: Remove failure label
+        if: github.event.action == 'edited'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.removeLabel({
+              issue_number: ${{ github.event.issue.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: "failure"
+            })
       - uses: actions/checkout@v4
       - name: Issue form parser
         id: parse
@@ -155,12 +166,35 @@ jobs:
           git push origin main
           echo "Repository added successfully!"
 
+      - name: Update labels
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issueNumber = ${{ github.event.issue.number }};
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Remove 'Onboarding' label
+            github.rest.issues.removeLabel({
+              issue_number: issueNumber,
+              owner: owner,
+              repo: repo,
+              name: "onboarding"
+            });
+
+            // Add 'Onboarded' label
+            github.rest.issues.addLabels({
+              issue_number: issueNumber,
+              owner: owner,
+              repo: repo,
+              labels: ["completed"]
+            });
       - name: Comment with success message
         uses: peter-evans/create-or-update-comment@v3.0.2
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            **Onboarding process completed!**
+            **🎉 Onboarding process completed!**
             The repository has been successfully added to the Belux Engineering Experience community. Thank you for your contribution! 🎉
   remove-repo-from-community:
     if: (github.event.action == 'closed') || (github.event.action == 'deleted')
