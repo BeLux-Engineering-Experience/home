@@ -68,13 +68,13 @@ jobs:
 
           repo_url = "${{ needs.parse-issue.outputs.repoUrl }}"
           solution_areas = {
-            "infrastructure": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).infrastructure }},
-            "application-innovation": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).application-innovation }},
-            "security": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).security }},
-            "data-ai": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).data-ai }},
-            "modern-workplace": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).modern-workplace }},
-            "dynamics-365": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).dynamics-365 }},
-            "other": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).other }}
+            "infrastructure": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).infrastructure && 'True' || 'False' }}",
+            "application-innovation": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).application-innovation && 'True' || 'False' }},
+            "security": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).security && 'True' || 'False' }},
+            "data-ai": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).data-ai && 'True' || 'False' }},
+            "modern-workplace": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).modern-workplace && 'True' || 'False' }},
+            "dynamics-365": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).dynamics-365 && 'True' || 'False' }},
+            "other": ${{ fromJson(needs.parse-issue.outputs.solutionAreas).other && 'True' || 'False' }}
           }
 
           file_path = "repo-urls.csv"
