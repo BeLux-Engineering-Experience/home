@@ -16,6 +16,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository Title | Repository URL | Description | 
 |------------------|----------------|-------------|
 | azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. | 
+| azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | Azure Quick Review | 
 
 
 ## Data &amp; AI repositories
@@ -26,6 +27,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Security repositories
 | Repository Title | Repository URL | Description | 
 |------------------|----------------|-------------|
+| azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | Azure Quick Review | 
 
 
 ## Modern Workplace repositories
@@ -52,8 +54,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|----------------|-------------|
 | azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. |
 | espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | Progressive Web App to easily compute and file the TOB tax for ESPP purchases, soon to be retired. |
+| azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | Azure Quick Review |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-04-18 15:09:22
+**Last updated**: 2025-04-29 11:38:39
