@@ -1,3 +1,4 @@
 repo-url,infrastructure,application-innovation,security,data-ai,modern-workplace,dynamics-365,other,repo-description
 https://github.com/nvandewalle/azure-health-check,true,false,false,false,false,false,true,The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service.
 https://github.com/nvandewalle/espp-tob-calculator,false,false,false,false,false,false,true,"Progressive Web App to easily compute and file the TOB tax for ESPP purchases, soon to be retired."
+https://github.com/Azure/azqr,true,false,true,false,false,false,false,Azure Quick Review
