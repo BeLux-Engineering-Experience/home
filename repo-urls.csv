@@ -5,3 +5,4 @@ https://github.com/Azure/azqr,true,false,true,false,false,false,false,Azure Quic
 https://github.com/jamelachahbar/AzureOptimizer,true,false,false,true,false,false,false,
 https://github.com/kvaes/Template-GHCPAM-Example,false,true,false,true,false,false,false,
 https://github.com/pmalarme/web-mcp-server,false,true,false,true,false,false,false,Small MCP server to search web content and get the content of web pages.
+https://github.com/claestom/azcmagent-logging-azuremonitor,true,false,false,false,false,false,false,This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging & monitoring of the different agents. 
