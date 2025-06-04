@@ -10,6 +10,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Application Innovation repositories
 | Repository Title | Repository URL | Description | 
 |------------------|----------------|-------------|
+| Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  | 
 
 
 ## Infrastructure repositories
@@ -24,6 +25,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository Title | Repository URL | Description | 
 |------------------|----------------|-------------|
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) |  | 
+| Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  | 
 
 
 ## Security repositories
@@ -58,8 +60,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | Progressive Web App to easily compute and file the TOB tax for ESPP purchases, soon to be retired. |
 | azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | Azure Quick Review |
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) |  |
+| Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-05-28 06:38:17
+**Last updated**: 2025-06-04 08:22:34
