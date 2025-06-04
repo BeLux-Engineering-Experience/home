@@ -11,6 +11,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository Title | Repository URL | Description | 
 |------------------|----------------|-------------|
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  | 
+| web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
 
 
 ## Infrastructure repositories
@@ -26,6 +27,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|----------------|-------------|
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) |  | 
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  | 
+| web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
 
 
 ## Security repositories
@@ -61,8 +63,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | Azure Quick Review |
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) |  |
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  |
+| web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-04 08:22:34
+**Last updated**: 2025-06-04 08:25:34
