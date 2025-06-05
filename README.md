@@ -70,4 +70,4 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-04 11:45:50
+**Last updated**: 2025-06-05 12:49:30
