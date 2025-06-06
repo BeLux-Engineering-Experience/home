@@ -29,6 +29,7 @@ with open(csv_file_path, "r") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         repos.append({
+            "owner": row.get("repo-url", "").split("/")[-2],
             "title": row.get("repo-url", "").split("/")[-1],
             "url": row.get("repo-url", ""),
             "application-innovation": row.get("application-innovation", "").lower() == "true",
@@ -40,6 +41,7 @@ with open(csv_file_path, "r") as csvfile:
             "other": row.get("other", "").lower() == "true",
             "description": row.get("repo-description", ""),
         })
+
 
 # Generate a string with the current date and time
 last_generated = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

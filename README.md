@@ -1,7 +1,15 @@
+<p align="center">
+  <span style="display: inline-block; width: 30%; border-top: 2px solid #1bbfed; vertical-align: middle;"></span>
+  <img src="logo/belengexplogo.png" alt="Innersource Logo" style="width:20%; vertical-align: middle; margin: 0 10px;" />
+  <span style="display: inline-block; width: 30%; border-top: 2px solid #1bbfed; vertical-align: middle;"></span>
+</p> 
+
 # BeLux Engineering Experience.
 One platform for all your architure and engineering needs. 
 
 BeLux Engineering Experience is a platform that provides a comprehensive set of resources for architects and engineers. 
+
+[![Submit your repo here!](https://img.shields.io/badge/Submit%20your%20repo%20here-blue)](https://github.com/BeLux-Engineering-Experience/home/issues/new?template=onboard_repo.yml)
 
 
 
@@ -54,6 +62,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | espp-tob-calculator | [https://github.com/nvandewalle/espp-tob-calculator](https://github.com/nvandewalle/espp-tob-calculator) | Progressive Web App to easily compute and file the TOB tax for ESPP purchases, soon to be retired. | 
 
 
+----
+
+## Activity dashboard
 
 ----
 ## All repositories
@@ -69,5 +80,3 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
-
-**Last updated**: 2025-06-05 12:54:06
