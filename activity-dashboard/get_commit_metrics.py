@@ -31,7 +31,7 @@ def read_repo_urls(filepath):
     return repos
 
 # Optional: Add your GitHub token here for higher rate limits
-GITHUB_TOKEN = "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"  # Added GitHub token for higher rate limits
+GITHUB_TOKEN = None  # Added GitHub token for higher rate limits
 
 headers = {}
 if GITHUB_TOKEN:
