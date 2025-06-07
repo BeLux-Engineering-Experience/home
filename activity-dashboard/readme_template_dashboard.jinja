@@ -1,0 +1,19 @@
+# 📊 Contributor Leaderboard (Updated Daily)
+
+Below is a summary of the total commits for each contributor 🚀
+
+| Contributor  | Commits ✅ |
+|-------------| --------|{% for handle, count in results.items() %}
+| [{{ handle }}](https://github.com/{{ handle }}) | {{ count }} | {% endfor %}
+
+----
+
+## 🏆 Leaderboard: Top 5 Contributors 
+
+| Rank | Contributor | Commits ✅ |
+|------|-------------|---------|{% for handle, count in top5.items() %}
+| {{ loop.index }} | [{{ handle }}](https://github.com/{{ handle }}) | {{ count }} |{% endfor %}
+
+----
+
+<sub>Generated on {{ generated_on }}</sub>
