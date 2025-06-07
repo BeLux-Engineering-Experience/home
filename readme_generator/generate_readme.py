@@ -51,7 +51,7 @@ output = template.render(repos=repos, solution_area_mapping=solution_area_mappin
 
 print(output)
 
-readme_file_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
+readme_file_path = os.path.join(os.path.dirname(__file__), "..", "profile/README.md")
 # Write the rendered content to README.md
 with open(readme_file_path, "wb") as readme_file:
     readme_file.write(output.encode("utf-8"))
