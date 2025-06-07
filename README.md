@@ -29,6 +29,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | Azure Quick Review | 
 | azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents.  | 
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. | 
+| AMA-deployment---DCR-association--Linux-Windows- | [https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-](https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-) |  | 
 
 
 ## Data &amp; AI repositories
@@ -79,8 +80,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents.  |
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. |
 | emergent-azureopenai-webapp | [https://github.com/claestom/emergent-azureopenai-webapp](https://github.com/claestom/emergent-azureopenai-webapp) |  |
+| AMA-deployment---DCR-association--Linux-Windows- | [https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-](https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-) |  |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
-
-**Last updated**: 2025-06-07 21:26:37
