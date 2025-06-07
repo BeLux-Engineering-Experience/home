@@ -9,7 +9,11 @@ One platform for all your architure and engineering needs.
 
 BeLux Engineering Experience is a platform that provides a comprehensive set of resources for architects and engineers. 
 
-[![Submit your repo here](https://img.shields.io/badge/Submit%20your%20repo%20here-<-blue)](https://github.com/BeLux-Engineering-Experience/home/issues/new?template=onboard_repo.yml)
+[![Submit your repo here](https://img.shields.io/badge/Submit%20your%20repo%20here📂-<-blue)](https://github.com/BeLux-Engineering-Experience/home/issues/new?template=onboard_repo.yml)
+
+
+[![Check the leaderboard here!](https://img.shields.io/badge/Check%20the%20leaderboard%20here🏆-<-yellow)](https://github.com/BeLux-Engineering-Experience/home/tree/main/activity-dashboard)
+
 
 
 
@@ -84,3 +88,5 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
+
+**Last updated**: 2025-06-07 21:26:37
