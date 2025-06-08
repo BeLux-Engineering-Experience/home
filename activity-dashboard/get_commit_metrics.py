@@ -77,7 +77,7 @@ with open('./activity-dashboard/readme_template_dashboard.jinja', 'r', encoding=
     template_content = template_file.read()
 
 template = jinja2.Template(template_content)
-current_date = datetime.datetime.now().strftime('%Y-%m-%d')
+current_date = datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')
 rendered = template.render(results=total_commits, generated_on=current_date, top5=top5_dict)
 
 with open('./activity-dashboard/README.md', 'w', encoding='utf-8') as out_file:
