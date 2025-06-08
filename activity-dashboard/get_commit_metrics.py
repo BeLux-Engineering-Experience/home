@@ -4,6 +4,7 @@ import csv
 from collections import defaultdict
 import datetime
 import jinja2
+import os
 
 # Read GitHub handles to include from ghhandles.csv
 def read_handles(filepath):
@@ -31,7 +32,7 @@ def read_repo_urls(filepath):
     return repos
 
 # Optional: Add your GitHub token here for higher rate limits
-GITHUB_TOKEN = None  # Added GitHub token for higher rate limits
+GITHUB_TOKEN = os.environ.get("ORG_METRICS_TOKEN")  # Added GitHub token for higher rate limits
 
 headers = {}
 if GITHUB_TOKEN:
