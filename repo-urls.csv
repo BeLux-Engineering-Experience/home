@@ -8,3 +8,4 @@ https://github.com/claestom/azcmagent-logging-azuremonitor,true,false,false,fals
 https://github.com/jamelachahbar/AzureOptimizer,true,false,false,true,false,false,false,"Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs."
 https://github.com/claestom/emergent-azureopenai-webapp,false,false,false,true,false,false,false,
 https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-,true,false,false,false,false,false,false,
+https://github.com/kvaes/VAmPI-on-Azure,false,true,false,false,false,false,false,Fork of VAmPI - Includes deploymnent statements for Azure & test scenarios to showcase
