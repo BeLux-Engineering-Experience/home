@@ -24,6 +24,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|----------------|-------------|
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  | 
 | web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
+| VAmPI-on-Azure | [https://github.com/kvaes/VAmPI-on-Azure](https://github.com/kvaes/VAmPI-on-Azure) | Fork of VAmPI - Includes deploymnent statements for Azure &amp; test scenarios to showcase | 
 
 
 ## Infrastructure repositories
@@ -85,8 +86,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. |
 | emergent-azureopenai-webapp | [https://github.com/claestom/emergent-azureopenai-webapp](https://github.com/claestom/emergent-azureopenai-webapp) |  |
 | AMA-deployment---DCR-association--Linux-Windows- | [https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-](https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-) |  |
+| VAmPI-on-Azure | [https://github.com/kvaes/VAmPI-on-Azure](https://github.com/kvaes/VAmPI-on-Azure) | Fork of VAmPI - Includes deploymnent statements for Azure &amp; test scenarios to showcase |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-07 21:26:37
+**Last updated**: 2025-06-09 18:32:13
