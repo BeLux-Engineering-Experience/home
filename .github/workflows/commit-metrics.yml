@@ -1,0 +1,34 @@
+name: Update Commit Metrics Dashboard
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Every day at 4am UTC
+  workflow_dispatch:
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r readme_generator/requirements.txt
+
+      - name: Run commit metrics script
+        env:
+          ORG_METRICS_TOKEN: ${{ secrets.ORG_METRICS_TOKEN }}
+        run: |
+          python activity-dashboard/get_commit_metrics.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update commit metrics dashboard"
+          file_pattern: activity-dashboard/README.md
