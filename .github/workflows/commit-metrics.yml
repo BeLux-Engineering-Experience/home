@@ -13,7 +13,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4.9.1
       - run: pip install -r activity-dashboard/requirements.txt
-      - run: python activity-dashboard/update_metrics_dashboard.py
+      - run: python activity-dashboard/get_commit_metrics.py
       - uses: actions4git/setup-git@v1
         name: Setup git
       - name: Commit and push changes
