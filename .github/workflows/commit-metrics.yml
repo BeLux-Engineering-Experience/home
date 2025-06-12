@@ -9,27 +9,16 @@ jobs:
   update-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          pip install -r activity-dashboard/requirements.txt
-
-      - name: Run commit metrics script
-        env:
-          ORG_METRICS_TOKEN: ${{ secrets.ORG_METRICS_TOKEN }}
-        run: |
-          python activity-dashboard/get_commit_metrics.py
-
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4.9.1
+      - run: pip install -r activity-dashboard/requirements.txt
+      - run: python activity-dashboard/update_metrics_dashboard.py
+      - uses: actions4git/setup-git@v1
+        name: Setup git
       - name: Commit and push changes
         run: |
           git add activity-dashboard/README.md
           git commit -m "Updated Metrics Dashboard"
           git push origin main
-          echo "Repository added successfully!"
+          echo "Activity dashboard updated successfully!"
