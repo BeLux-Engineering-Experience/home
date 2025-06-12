@@ -3,7 +3,11 @@ name: Update Commit Metrics Dashboard
 on:
   schedule:
     - cron: '0 4 * * *'  # Every day at 4am UTC
+    
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-metrics:
