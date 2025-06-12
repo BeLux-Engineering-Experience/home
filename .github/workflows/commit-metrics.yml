@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r readme_generator/requirements.txt
+          pip install -r activity-dashboard/requirements.txt
 
       - name: Run commit metrics script
         env:
@@ -28,7 +28,8 @@ jobs:
           python activity-dashboard/get_commit_metrics.py
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update commit metrics dashboard"
-          file_pattern: activity-dashboard/README.md
+        run: |
+          git add activity-dashboard/README.md
+          git commit -m "Updated Metrics Dashboard"
+          git push origin main
+          echo "Repository added successfully!"
