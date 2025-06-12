@@ -5,6 +5,7 @@ from collections import defaultdict
 import datetime
 import jinja2
 import os
+import pytz
 
 # Read GitHub handles to include from ghhandles.csv
 def read_handles(filepath):
@@ -78,7 +79,8 @@ with open('./activity-dashboard/readme_template_dashboard.jinja', 'r', encoding=
     template_content = template_file.read()
 
 template = jinja2.Template(template_content)
-current_date = datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')
+cet = pytz.timezone('Europe/Brussels')
+current_date = datetime.datetime.now(cet).strftime('%d-%m-%Y %H:%M:%S')
 rendered = template.render(results=total_commits, generated_on=current_date, top5=top5_dict)
 
 with open('./activity-dashboard/README.md', 'w', encoding='utf-8') as out_file:
