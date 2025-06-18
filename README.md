@@ -24,6 +24,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|----------------|-------------|
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) |  | 
 | web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
+| Template-GHCPAM-Example-SemanticKernel | [https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) |  | 
 
 
 ## Infrastructure repositories
@@ -46,6 +47,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | emergent-azureopenai-webapp | [https://github.com/claestom/emergent-azureopenai-webapp](https://github.com/claestom/emergent-azureopenai-webapp) |  | 
 | mcp-server | [https://github.com/Nicwalle/mcp-server](https://github.com/Nicwalle/mcp-server) | Demo MCP server | 
 | finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. | 
+| Template-GHCPAM-Example-SemanticKernel | [https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) |  | 
 
 
 ## Security repositories
@@ -90,8 +92,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | AMA-deployment---DCR-association--Linux-Windows- | [https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-](https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-) |  |
 | mcp-server | [https://github.com/Nicwalle/mcp-server](https://github.com/Nicwalle/mcp-server) | Demo MCP server |
 | finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. |
+| Template-GHCPAM-Example-SemanticKernel | [https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) |  |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-10 09:39:12
+**Last updated**: 2025-06-18 18:49:04
