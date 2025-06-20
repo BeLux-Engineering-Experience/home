@@ -32,6 +32,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository | Description | 
 |------------------|-------------|
 | [azqr](https://github.com/Azure/azqr) | A script to quickly review your Azure environment and check if you follow best practices | 
+| [azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. | 
 
 
 ## AI repositories
@@ -80,8 +81,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode |
 | web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. |
 | Template-GHCPAM-Example-SemanticKernel | [https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) | Github copilot agent mode example with semantic kernel |
+| azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-20 12:51:49
+**Last updated**: 2025-06-20 12:56:06
