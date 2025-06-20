@@ -32,3 +32,6 @@ body:
         - label: Other
     validations:
       required: true
+- type: markdown
+  attributes:
+    value: "Thank you for contributing. As a best practice, make sure to include a license on your repository and to remove all the secrets in your code."
