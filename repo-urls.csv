@@ -1,1 +1,2 @@
-
+repo-url,infrastructure,application-innovation,security,data,ai,modern-workplace,dynamics-365,other,repo-description
+https://github.com/Azure/azqr,true,false,false,false,false,false,false,false,A script to quickly review your Azure environment and check if you follow best practices
