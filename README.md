@@ -24,6 +24,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|-------------|
 | [azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. | 
 | [Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode | 
+| [web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
 
 
 ## Infrastructure repositories
@@ -36,6 +37,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository | Description | 
 |------------------|-------------|
 | [Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode | 
+| [web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
 
 
 ## Data repositories
@@ -74,8 +76,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | A script to quickly review your Azure environment and check if you follow best practices |
 | azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. |
 | Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode |
+| web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-20 12:46:58
+**Last updated**: 2025-06-20 12:49:49
