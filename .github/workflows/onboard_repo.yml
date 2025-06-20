@@ -107,6 +107,8 @@ jobs:
 
   add-repo-to-community:
     if: github.event.action == 'opened' || github.event.action == 'edited'
+    concurrency: 
+      group: git
     needs: 
     - parse-issue
     - url-validator
