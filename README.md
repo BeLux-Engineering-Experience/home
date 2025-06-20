@@ -33,6 +33,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|-------------|
 | [azqr](https://github.com/Azure/azqr) | A script to quickly review your Azure environment and check if you follow best practices | 
 | [azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. | 
+| [AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. | 
 
 
 ## AI repositories
@@ -82,8 +83,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. |
 | Template-GHCPAM-Example-SemanticKernel | [https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) | Github copilot agent mode example with semantic kernel |
 | azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. |
+| AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-20 12:56:06
+**Last updated**: 2025-06-20 12:58:15
