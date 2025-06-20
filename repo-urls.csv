@@ -1,3 +1,4 @@
 repo-url,infrastructure,application-innovation,security,data,ai,modern-workplace,dynamics-365,other,repo-description
 https://github.com/Azure/azqr,true,false,false,false,false,false,false,false,A script to quickly review your Azure environment and check if you follow best practices
 https://github.com/nvandewalle/azure-health-check,false,true,false,false,false,false,false,false,The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service.
+https://github.com/kvaes/Template-GHCPAM-Example,false,true,false,false,true,false,false,false,Example repository for demonstrating GitHub Copilot Agent mode
