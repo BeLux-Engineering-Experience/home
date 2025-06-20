@@ -10,6 +10,13 @@ body:
       description: URL of you public repository
     validations:
       required: true
+  - type: input
+    id: repo-description
+    attributes:
+      label: Repository description
+      description: Short description of what your repository is about. Your chance to market your work 😉
+    validations:
+      required: true
   - type: checkboxes
     id: solution-areas
     attributes:
@@ -17,7 +24,8 @@ body:
       options:
         - label: Infrastructure
         - label: Application Innovation
-        - label: Data & AI
+        - label: AI
+        - label: Data
         - label: Security
         - label: Modern Workplace
         - label: Dynamics 365
