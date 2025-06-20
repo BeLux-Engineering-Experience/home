@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   parse-issue:
+    if: contains(github.event.issue.labels.*.name, 'onboarding') || contains(github.event.issue.labels.*.name, 'completed')
     runs-on: ubuntu-latest
     outputs:
       repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
