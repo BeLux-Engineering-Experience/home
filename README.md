@@ -23,6 +23,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | Repository | Description | 
 |------------------|-------------|
 | [azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. | 
+| [Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode | 
 
 
 ## Infrastructure repositories
@@ -34,6 +35,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## AI repositories
 | Repository | Description | 
 |------------------|-------------|
+| [Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode | 
 
 
 ## Data repositories
@@ -71,8 +73,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 |------------------|----------------|-------------|
 | azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | A script to quickly review your Azure environment and check if you follow best practices |
 | azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. |
+| Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-20 12:41:51
+**Last updated**: 2025-06-20 12:46:58
