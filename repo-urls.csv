@@ -4,3 +4,4 @@ https://github.com/nvandewalle/azure-health-check,false,true,false,false,false,f
 https://github.com/kvaes/Template-GHCPAM-Example,false,true,false,false,true,false,false,false,Example repository for demonstrating GitHub Copilot Agent mode
 https://github.com/pmalarme/web-mcp-server,false,true,false,false,true,false,false,false,Small MCP server to search web content and get the content of web pages.
 https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel,false,true,false,false,true,false,false,false,Github copilot agent mode example with semantic kernel
+https://github.com/claestom/azcmagent-logging-azuremonitor,true,false,false,false,false,false,false,false,This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging & monitoring of the different agents.
