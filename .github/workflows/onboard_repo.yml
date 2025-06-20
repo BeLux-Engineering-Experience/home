@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       repoUrl: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
+      repoDescription: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-description }}
       solutionAreas:
         ${{ toJson(fromJson(steps.parse.outputs.parsed-issue).solution-areas) }}
     steps:
@@ -53,10 +54,12 @@ jobs:
           body: |
             **Starting the onboarding of the repository following parameters:**
             Repo URL: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-url }}
+            Repo description: ${{ fromJson(steps.parse.outputs.parsed-issue).repo-description }}
             Solution areas: 
             * Infrastructure: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.infrastructure && '✅' || '⛔' }}
             * Application Innovation: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.application-innovation && '✅' || '⛔' }}
-            * Data & AI: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.data-ai && '✅' || '⛔' }}
+            * Data: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.data && '✅' || '⛔' }}
+            * AI: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.ai && '✅' || '⛔' }}
             * Security: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.security && '✅' || '⛔' }}
             * Modern Workplace: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.modern-workplace && '✅' || '⛔' }}
             * Dynamics 365: ${{ fromJson(steps.parse.outputs.parsed-issue).solution-areas.dynamics-365 && '✅' || '⛔' }}
@@ -104,25 +107,29 @@ jobs:
 
   add-repo-to-community:
     if: github.event.action == 'opened' || github.event.action == 'edited'
-    needs: ["parse-issue", "url-validator", "get-repo-description"]
+    needs: 
+    - parse-issue
+    - url-validator
+    # - get-repo-description
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       - uses: actions4git/setup-git@v1
         name: Setup git
-      - name: Add repository to community
+      - name: Adding repo to CSV
         run: |
           import csv
           import requests
 
           repo_url = "${{ needs.parse-issue.outputs.repoUrl }}"
-          repo_description = "${{ needs.get-repo-description.outputs.description }}"
+          repo_description = "${{ needs.parse-issue.outputs.repoDescription }}"
           solution_areas = {
             "infrastructure": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).infrastructure }}",
             "application-innovation": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).application-innovation }}",
             "security": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).security }}",
-            "data-ai": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).data-ai }}",
+            "data": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).data }}",
+            "ai": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).ai }}",
             "modern-workplace": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).modern-workplace }}",
             "dynamics-365": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).dynamics-365 }}",
             "other": "${{ fromJson(needs.parse-issue.outputs.solutionAreas).other }}"
@@ -148,18 +155,20 @@ jobs:
 
           # Write the updated data back to the CSV file
           with open(file_path, mode="w", newline="", encoding="utf-8") as csvfile:
-            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data-ai", "modern-workplace", "dynamics-365", "other", "repo-description"]
+            fieldnames = ["repo-url", "infrastructure", "application-innovation", "security", "data", "ai", "modern-workplace", "dynamics-365", "other", "repo-description"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
 
         shell: python
 
-      - name: Add repo to community
+      - name: Commit CSV
         run: |
           git add repo-urls.csv
-          git commit -m "Add repository ${{ needs.parse-issue.outputs.repoUrl }} to the community"
-          git push origin main
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Add repository ${{ needs.parse-issue.outputs.repoUrl }} to the community"
+            git push origin main
+          fi
           echo "Repository added successfully!"
 
       - name: Update labels
@@ -240,39 +249,37 @@ jobs:
             **Offboarding process completed!**
             The repository has been successfully removed from the Belux Engineering Experience community 😢
 
-  get-repo-description:
-    if: github.event.action == 'opened' || github.event.action == 'edited'
-    needs: [parse-issue, url-validator]
-    runs-on: ubuntu-latest
-    outputs:
-      description: ${{ fromJson(steps.get-description.outputs.result) }}
-    steps:
-      - name: Get repository information
-        id: get-description
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const repoUrl = "${{ needs.parse-issue.outputs.repoUrl }}";
-            const repoName = repoUrl.split("/").slice(-2).join("/");
-            const [owner, repo] = repoName.split("/");
+  # get-repo-description:
+  #   if: github.event.action == 'opened' || github.event.action == 'edited'
+  #   needs: [parse-issue, url-validator]
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     description: ${{ fromJson(steps.get-description.outputs.result) }}
+  #   steps:
+  #     - name: Get repository information
+  #       id: get-description
+  #       uses: actions/github-script@v6
+  #       with:
+  #         script: |
+  #           const repoUrl = "${{ needs.parse-issue.outputs.repoUrl }}";
+  #           const repoName = repoUrl.split("/").slice(-2).join("/");
+  #           const [owner, repo] = repoName.split("/");
 
-            const { data: repoData } = await github.rest.repos.get({
-              owner,
-              repo
-            });
-            console.log(repoData);
-            console.log("Description:", repoData.description);
-            return repoData.description;
+  #           const { data: repoData } = await github.rest.repos.get({
+  #             owner,
+  #             repo
+  #           });
+  #           console.log(repoData);
+  #           console.log("Description:", repoData.description);
+  #           return repoData.description;
 
   comment-on-failure:
     if: failure()
     needs:
-      [
-        parse-issue,
-        add-repo-to-community,
-        remove-repo-from-community,
-        get-repo-description,
-      ]
+      - parse-issue
+      - add-repo-to-community
+      - remove-repo-from-community
+      # - get-repo-description
     runs-on: ubuntu-latest
     steps:
       - name: Comment on failure
