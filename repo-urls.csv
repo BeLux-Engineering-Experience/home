@@ -1,13 +1,1 @@
-repo-url,infrastructure,application-innovation,security,data-ai,modern-workplace,dynamics-365,other,repo-description
-https://github.com/nvandewalle/azure-health-check,true,false,false,false,false,false,true,The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service.
-https://github.com/nvandewalle/espp-tob-calculator,false,false,false,false,false,false,true,"Progressive Web App to easily compute and file the TOB tax for ESPP purchases, soon to be retired."
-https://github.com/Azure/azqr,true,false,true,false,false,false,false,Azure Quick Review
-https://github.com/kvaes/Template-GHCPAM-Example,false,true,false,true,false,false,false,
-https://github.com/pmalarme/web-mcp-server,false,true,false,true,false,false,false,Small MCP server to search web content and get the content of web pages.
-https://github.com/claestom/azcmagent-logging-azuremonitor,true,false,false,false,false,false,false,This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging & monitoring of the different agents. 
-https://github.com/jamelachahbar/AzureOptimizer,true,false,false,true,false,false,false,"Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs."
-https://github.com/claestom/emergent-azureopenai-webapp,false,false,false,true,false,false,false,
-https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-,true,false,false,false,false,false,false,
-https://github.com/Nicwalle/mcp-server,false,false,false,true,false,false,false,Demo MCP server
-https://github.com/microsoft/finops-toolkit,true,false,false,true,false,false,false,Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud.
-https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel,false,true,false,true,false,false,false,
+
