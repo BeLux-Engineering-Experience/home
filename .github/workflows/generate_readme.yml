@@ -11,6 +11,9 @@ permissions:
   
 jobs:
   generate-readme:
+    concurrency: 
+      group: git
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
