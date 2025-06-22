@@ -35,6 +35,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | [azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. | 
 | [AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. | 
 | [finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. | 
+| [lawcostoptseries](https://github.com/claestom/lawcostoptseries) | This repository contains KQL queries and an Azure Workbook template to help you analyze and optimize the cost and usage of your Log Analytics workspaces. | 
 
 
 ## AI repositories
@@ -86,8 +87,9 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. |
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. |
 | finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. |
+| lawcostoptseries | [https://github.com/claestom/lawcostoptseries](https://github.com/claestom/lawcostoptseries) | This repository contains KQL queries and an Azure Workbook template to help you analyze and optimize the cost and usage of your Log Analytics workspaces. |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-20 13:16:08
+**Last updated**: 2025-06-22 12:49:29
