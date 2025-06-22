@@ -11,11 +11,11 @@ Below is a summary of the total commits for each contributor 🚀
 | Contributor  | Commits ✅ |
 |-------------| --------|
 | [Nicwalle](https://github.com/Nicwalle) | 16 | 
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 
 | [claestom](https://github.com/claestom) | 23 | 
+| [pmalarme](https://github.com/pmalarme) | 3 | 
 | [kvaes](https://github.com/kvaes) | 7 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 226 | 
-| [pmalarme](https://github.com/pmalarme) | 3 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 
 
 ----
 
@@ -31,4 +31,4 @@ Below is a summary of the total commits for each contributor 🚀
 
 ----
 
-**Last updated**: 21-06-2025 06:12:17
+**Last updated**: 22-06-2025 06:20:28
