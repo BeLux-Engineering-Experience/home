@@ -10,12 +10,12 @@ Below is a summary of the total commits for each contributor 🚀
 
 | Contributor  | Commits ✅ |
 |-------------| --------|
-| [pmalarme](https://github.com/pmalarme) | 3 | 
-| [jamelachahbar](https://github.com/jamelachahbar) | 226 | 
-| [kvaes](https://github.com/kvaes) | 7 | 
-| [Nicwalle](https://github.com/Nicwalle) | 16 | 
+| [claestom](https://github.com/claestom) | 0 | 
+| [kvaes](https://github.com/kvaes) | 5 | 
+| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 
-| [claestom](https://github.com/claestom) | 33 | 
+| [Nicwalle](https://github.com/Nicwalle) | 16 | 
 
 ----
 
@@ -23,12 +23,12 @@ Below is a summary of the total commits for each contributor 🚀
 
 | Rank | Contributor | Commits ✅ |
 |------|-------------|---------|
-| 1 | [jamelachahbar](https://github.com/jamelachahbar) | 226 |
-| 2 | [claestom](https://github.com/claestom) | 33 |
-| 3 | [Nicwalle](https://github.com/Nicwalle) | 16 |
-| 4 | [kvaes](https://github.com/kvaes) | 7 |
-| 5 | [pmalarme](https://github.com/pmalarme) | 3 |
+| 1 | [Nicwalle](https://github.com/Nicwalle) | 16 |
+| 2 | [kvaes](https://github.com/kvaes) | 5 |
+| 3 | [claestom](https://github.com/claestom) | 0 |
+| 4 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
+| 5 | [pmalarme](https://github.com/pmalarme) | 0 |
 
 ----
 
-**Last updated**: 22-06-2025 20:32:14
+**Last updated**: 23-06-2025 06:23:43
