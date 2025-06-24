@@ -34,6 +34,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents.  | 
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. | 
 | AMA-deployment---DCR-association--Linux-Windows- | [https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-](https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-) |  | 
+| finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. | 
 
 
 ## Data &amp; AI repositories
@@ -43,6 +44,8 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. | 
 | emergent-azureopenai-webapp | [https://github.com/claestom/emergent-azureopenai-webapp](https://github.com/claestom/emergent-azureopenai-webapp) |  | 
+| mcp-server | [https://github.com/Nicwalle/mcp-server](https://github.com/Nicwalle/mcp-server) | Demo MCP server | 
+| finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. | 
 
 
 ## Security repositories
@@ -85,8 +88,10 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 | AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. |
 | emergent-azureopenai-webapp | [https://github.com/claestom/emergent-azureopenai-webapp](https://github.com/claestom/emergent-azureopenai-webapp) |  |
 | AMA-deployment---DCR-association--Linux-Windows- | [https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-](https://github.com/claestom/AMA-deployment---DCR-association--Linux-Windows-) |  |
+| mcp-server | [https://github.com/Nicwalle/mcp-server](https://github.com/Nicwalle/mcp-server) | Demo MCP server |
+| finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. |
 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-07 21:26:37
+**Last updated**: 2025-06-10 09:39:12
