@@ -15,14 +15,14 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 [![Check the leaderboard here!](https://img.shields.io/badge/Check%20the%20leaderboard%20here🏆-<-yellow)](https://github.com/BeLux-Engineering-Experience/home/tree/main/activity-dashboard)
 
 
-{% set possible_solution_areas = ['application-innovation', 'infrastructure', 'security', 'data-ai' ] %}
+{% set possible_solution_areas = ['application-innovation', 'infrastructure', 'security', 'data', 'ai' ] %}
 
 {% for solution_area_id, solution_area_display_name in solution_area_mapping.items() %}
 {% set solaRepos = repos | selectattr(solution_area_id) | list %}
 ## {{ solution_area_display_name }} repositories
-| Repository Title | Repository URL | Description | 
-|------------------|----------------|-------------|{% for repo in solaRepos %}
-| {{ repo.title }} | [{{ repo.url }}]({{ repo.url }}) | {{ repo.description }} | {% endfor %}
+| Repository | Description | 
+|------------------|-------------|{% for repo in solaRepos %}
+| [{{ repo.title }}]({{ repo.url }}) | {{ repo.description }} | {% endfor %}
 {% endfor %}
 
 ----
