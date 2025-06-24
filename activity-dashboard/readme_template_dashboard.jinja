@@ -8,11 +8,15 @@
 
 Below is a summary of the total commits for each contributor 🚀
 
-| Contributor  | Commits ✅ |
+| Contributor  | Commits ✅ | 
 |-------------| --------|{% for handle, count in results.items() %}
 | [{{ handle }}](https://github.com/{{ handle }}) | {{ count }} | {% endfor %}
 
 ----
+
+| Contributor  | Commits ✅ | Cross  repo commits 🆘 |
+|-------------| --------| --------|{% for handle, count in results.items() %}
+| [{{ handle }}](https://github.com/{{ handle }}) | {{ count }} | {{ cross_repo_commits[handle] }} | {% endfor %}
 
 ## 🏆 Leaderboard: Top 5 Contributors 
 

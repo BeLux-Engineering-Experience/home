@@ -7,7 +7,7 @@ import jinja2
 import os
 import pytz
 
-# Read GitHub handles to include from ghhandles.csv
+# Read GitHub handles to include from gh-handles.csv
 def read_handles(filepath):
     handles = set()
     with open(filepath, newline='', encoding='utf-8') as f:
@@ -44,14 +44,16 @@ handles = read_handles('./activity-dashboard/gh-handles.csv')  # Use the correct
 repos = read_repo_urls('repo-urls.csv')
 
 total_commits = {h: 0 for h in handles}
+# New metric: Commits by users who are not the repo owner
+non_owner_commits = {h: 0 for h in handles}
 
-# Calculate the date 31 days ago in ISO format
-# since_date = (datetime.datetime.utcnow() - datetime.timedelta(days=31)).isoformat() + 'Z'
+# Calculate the date 7 days ago in ISO format
+since_date = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).isoformat().replace('+00:00', 'Z')
 
 for github_owner, github_repo in repos:
     api_url = f"https://api.github.com/repos/{github_owner}/{github_repo}/commits"
-    # params = {"per_page": 100, "page": 1, "since": since_date}
-    params = {"per_page": 100, "page": 1}
+    params = {"per_page": 100, "page": 1, "since": since_date}
+    #params = {"per_page": 100, "page": 1}
     while True:
         response = requests.get(api_url, headers=headers, params=params)
         if response.status_code != 200:
@@ -68,6 +70,9 @@ for github_owner, github_repo in repos:
                 login = commit["commit"]["author"]["name"]
             if login in handles:
                 total_commits[login] += 1
+                # Only count if the user is not the repo owner
+                if login != github_owner:
+                    non_owner_commits[login] += 1
         params["page"] += 1
 
 # Save the top 5 contributors as a separate JSON file
@@ -81,12 +86,15 @@ with open('./activity-dashboard/readme_template_dashboard.jinja', 'r', encoding=
 template = jinja2.Template(template_content)
 cet = pytz.timezone('Europe/Brussels')
 current_date = datetime.datetime.now(cet).strftime('%d-%m-%Y %H:%M:%S')
-rendered = template.render(results=total_commits, generated_on=current_date, top5=top5_dict)
+rendered = template.render(results=total_commits, generated_on=current_date, top5=top5_dict, cross_repo_commits=non_owner_commits)
 
 with open('./activity-dashboard/README.md', 'w', encoding='utf-8') as out_file:
     out_file.write(rendered)
 
-print("Top 5 contributors:")
-print(json.dumps(top5_dict, indent=2))
+# print("Top 5 contributors:")
+# print(json.dumps(top5_dict, indent=2))
 
-print(json.dumps(total_commits, indent=2))
+# print("Commits by non-owners:")
+# print(json.dumps(non_owner_commits, indent=2))
+
+# print(json.dumps(total_commits, indent=2))
