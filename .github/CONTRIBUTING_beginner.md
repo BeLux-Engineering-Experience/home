@@ -26,9 +26,11 @@ Thank you for your interest in contributing! This guide is designed for **beginn
 
 ## 🚀 Step-by-Step: How to Contribute
 
-### 1. Fork the Repository
+### 1. Fork a Repository under the Belux Engineering Experience
 
 - Go to: [https://github.com/BeLux-Engineering-Experience](https://github.com/BeLux-Engineering-Experience)
+- Find a repository that you would like to contribute to.
+- The link you click should bring you to the repository itself.
 - Click the **“Fork”** button (top right) → this creates a copy under your account.
 
 ### 2. Clone It to Your Laptop
