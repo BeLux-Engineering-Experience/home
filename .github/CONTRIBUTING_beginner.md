@@ -106,8 +106,6 @@ Open an issue in the repo or tag a maintainer. We're here to support you.
 
 ---
 
----
-
 ### 🤖 Using GitHub Copilot
 
 GitHub Copilot is an AI pair programmer that helps you write code faster and with fewer errors.
