@@ -115,11 +115,13 @@ GitHub Copilot is an AI pair programmer that helps you write code faster and wit
 2. Sign in with your Microsoft account.
 3. It should be enabled for your Enterprise Managed User (EMU) account.
 4. Enable Copilot for your personal account by linking it.
-5. Join the MicrosoftCopilot GitHub organization that grants your jamelachahbar personal GitHub account GitHub Copilot access.
+5. Join the MicrosoftCopilot GitHub organization that grants your personal GitHub account GitHub Copilot access.
 6. Accept the invitation
+   
 ![image](https://github.com/user-attachments/assets/a4061071-b612-4aed-a114-3ef2a08705fb)
 ![image](https://github.com/user-attachments/assets/bffba021-ccd2-494e-a32d-afa1b48a4d8b)
-7. 🥳 Welcome to Copilot
+8. 🥳 Welcome to Copilot
+
 ![image](https://github.com/user-attachments/assets/9a9325f1-0826-4c5f-97fa-fca8bfa6ff94)
 
 
