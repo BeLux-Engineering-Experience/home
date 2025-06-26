@@ -84,11 +84,10 @@ git push origin my-first-contribution
 
 ## 🧠 Resources to Learn
 
-- [Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk) 📺 By freeCodeCamp – best 1-hour walkthrough for visual learners. 😉
 - [GitHub Glossary](https://docs.github.com/en/get-started/quickstart/github-glossary)
 - [Git Handbook](https://guides.github.com/introduction/git-handbook/)
 - [GitHub Copilot](https://aka.ms/copilot)
-- [YouTube: Git & GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk) 📺By freeCodeCamp – best 1-hour walkthrough for visual learners. 😉
 
 ---
 
