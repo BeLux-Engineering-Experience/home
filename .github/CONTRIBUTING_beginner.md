@@ -104,4 +104,50 @@ Open an issue in the repo or tag a maintainer. We're here to support you.
 
 ---
 
+---
+
+### 🤖 Using GitHub Copilot
+
+GitHub Copilot is an AI pair programmer that helps you write code faster and with fewer errors.
+
+#### 🔗 Enable Copilot at Microsoft
+1. Go to: [https://aka.ms/copilot](https://aka.ms/copilot)
+2. Sign in with your Microsoft account.
+3. It should be enabled for your Enterprise Managed User (EMU) account.
+4. Enable Copilot for your personal account by linking it.
+5. Join the MicrosoftCopilot GitHub organization that grants your jamelachahbar personal GitHub account GitHub Copilot access.
+6. Accept the invitation
+![image](https://github.com/user-attachments/assets/a4061071-b612-4aed-a114-3ef2a08705fb)
+![image](https://github.com/user-attachments/assets/bffba021-ccd2-494e-a32d-afa1b48a4d8b)
+7. 🥳 Welcome to Copilot
+![image](https://github.com/user-attachments/assets/9a9325f1-0826-4c5f-97fa-fca8bfa6ff94)
+
+
+#### 💻 Set Up in VS Code
+1. Open **Visual Studio Code**
+2. Go to **Extensions** (left menu)
+3. Search for **GitHub Copilot**
+4. Click **Install**
+5. Sign in with GitHub when prompted
+
+#### ✨ How to Use
+- Start typing a comment or function, and Copilot will suggest code
+- Press `Tab` to accept a suggestion
+- Use `Ctrl + Enter` (Windows/Linux) or `Cmd + Enter` (Mac) to open Copilot panel for more options
+
+#### 🧠 Examples
+```python
+# Suggest a function to reverse a string
+def
+```
+Copilot will auto-suggest:
+```python
+def reverse_string(s):
+    return s[::-1]
+```
+
+#### 🛠 Resources
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+- [Copilot Labs for advanced features](https://githubnext.com/projects/copilot-labs/)
+
 🎉 **You're ready to contribute!**
