@@ -32,6 +32,6 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please open an issue using the `🧑‍💻 Onboard my repository` template.
 
-If you are new to Git, GitHub, or VS Code, we have a step-by-step tutorial to help you get started. See [contributing_beginners.md](contributing_beginners.md) for detailed instructions.
+If you are new to Git, GitHub, or VS Code, we have a step-by-step tutorial to help you get started. See [the getting started guide](./.github/CONTRIBUTING_beginner.md) for detailed instructions.
 
-**Last updated**: 2025-06-27 23:44:25
+**Last updated**: 2025-06-27 23:48:07
