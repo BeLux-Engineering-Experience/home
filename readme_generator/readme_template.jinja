@@ -11,18 +11,12 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 
 [![Submit your repo here](https://img.shields.io/badge/Submit%20your%20repo%20here📂-<-blue)](https://github.com/BeLux-Engineering-Experience/home/issues/new?template=onboard_repo.yml)
 
-
 [![Check the leaderboard here!](https://img.shields.io/badge/Check%20the%20leaderboard%20here🏆-<-yellow)](https://github.com/BeLux-Engineering-Experience/home/tree/main/activity-dashboard)
 
+## Workload Overviews
 
-{% set possible_solution_areas = ['application-innovation', 'infrastructure', 'security', 'data', 'ai' ] %}
-
-{% for solution_area_id, solution_area_display_name in solution_area_mapping.items() %}
-{% set solaRepos = repos | selectattr(solution_area_id) | list %}
-## {{ solution_area_display_name }} repositories
-| Repository | Description | 
-|------------------|-------------|{% for repo in solaRepos %}
-| [{{ repo.title }}]({{ repo.url }}) | {{ repo.description }} | {% endfor %}
+{% for display_name, rel_link in workload_links %}
+- [{{ display_name }} repositories]({{ rel_link }})
 {% endfor %}
 
 ----
@@ -30,11 +24,6 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Activity dashboard
 
 ----
-## All repositories
-| Repository Title | Repository URL | Description | 
-|------------------|----------------|-------------|{% for repo in repos %}
-| {{ repo.title }} | [{{ repo.url }}]({{ repo.url }}) | {{ repo.description }} |{% endfor %}
-
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
