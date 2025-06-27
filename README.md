@@ -4,7 +4,7 @@
   <span style="display: inline-block; width: 30%; border-top: 2px solid #1bbfed; vertical-align: middle;"></span>
 </p> 
 
-# BeLux Engineering Experience.
+# BeLux Engineering Experience
 One platform for all your architure and engineering needs. 
 
 BeLux Engineering Experience is a platform that provides a comprehensive set of resources for architects and engineers. 
@@ -29,10 +29,7 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 
 ----
 
-## Activity dashboard
-
-----
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-27 23:29:23
+**Last updated**: 2025-06-27 23:39:19
