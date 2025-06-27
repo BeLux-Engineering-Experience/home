@@ -11,64 +11,20 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 
 [![Submit your repo here](https://img.shields.io/badge/Submit%20your%20repo%20here📂-<-blue)](https://github.com/BeLux-Engineering-Experience/home/issues/new?template=onboard_repo.yml)
 
-
 [![Check the leaderboard here!](https://img.shields.io/badge/Check%20the%20leaderboard%20here🏆-<-yellow)](https://github.com/BeLux-Engineering-Experience/home/tree/main/activity-dashboard)
 
+## Workload Overviews
 
 
+- [Application Innovation repositories](workloads/application-innovation/README.md)
 
+- [Infrastructure repositories](workloads/infrastructure/README.md)
 
+- [AI repositories](workloads/ai/README.md)
 
-## Application Innovation repositories
-| Repository | Description | 
-|------------------|-------------|
-| [azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. | 
-| [Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode | 
-| [web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
-| [Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) | Github copilot agent mode example with semantic kernel | 
+- [Data repositories](workloads/data/README.md)
 
-
-## Infrastructure repositories
-| Repository | Description | 
-|------------------|-------------|
-| [azqr](https://github.com/Azure/azqr) | A script to quickly review your Azure environment and check if you follow best practices | 
-| [azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. | 
-| [AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. | 
-| [finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. | 
-| [lawcostoptseries](https://github.com/claestom/lawcostoptseries) | This repository contains KQL queries and an Azure Workbook template to help you analyze and optimize the cost and usage of your Log Analytics workspaces. | 
-
-
-## AI repositories
-| Repository | Description | 
-|------------------|-------------|
-| [Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode | 
-| [web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. | 
-| [Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) | Github copilot agent mode example with semantic kernel | 
-
-
-## Data repositories
-| Repository | Description | 
-|------------------|-------------|
-
-
-## Security repositories
-| Repository | Description | 
-|------------------|-------------|
-
-
-## Modern Workplace repositories
-| Repository | Description | 
-|------------------|-------------|
-
-
-## Dynamics 365 repositories
-| Repository | Description | 
-|------------------|-------------|
-
-
-## Other repositories
-| Repository | Description | 
-|------------------|-------------|
+- [Security repositories](workloads/security/README.md)
 
 
 ----
@@ -76,20 +32,6 @@ BeLux Engineering Experience is a platform that provides a comprehensive set of 
 ## Activity dashboard
 
 ----
-## All repositories
-| Repository Title | Repository URL | Description | 
-|------------------|----------------|-------------|
-| azqr | [https://github.com/Azure/azqr](https://github.com/Azure/azqr) | A script to quickly review your Azure environment and check if you follow best practices |
-| azure-health-check | [https://github.com/nvandewalle/azure-health-check](https://github.com/nvandewalle/azure-health-check) | The Health Check Framework is a set of PowerShell scripts that assess the health of Azure resources. The framework is designed to be extensible and can be used to assess many Azure service. |
-| Template-GHCPAM-Example | [https://github.com/kvaes/Template-GHCPAM-Example](https://github.com/kvaes/Template-GHCPAM-Example) | Example repository for demonstrating GitHub Copilot Agent mode |
-| web-mcp-server | [https://github.com/pmalarme/web-mcp-server](https://github.com/pmalarme/web-mcp-server) | Small MCP server to search web content and get the content of web pages. |
-| Template-GHCPAM-Example-SemanticKernel | [https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel](https://github.com/kvaes/Template-GHCPAM-Example-SemanticKernel) | Github copilot agent mode example with semantic kernel |
-| azcmagent-logging-azuremonitor | [https://github.com/claestom/azcmagent-logging-azuremonitor](https://github.com/claestom/azcmagent-logging-azuremonitor) | This repo explains how you can transfer the Azure Arc Connected Machine Agent to Log Analytics workspace to allow for central logging &amp; monitoring of the different agents. |
-| AzureOptimizer | [https://github.com/jamelachahbar/AzureOptimizer](https://github.com/jamelachahbar/AzureOptimizer) | Azure Optimizer is a Python-based tool used to optimize Azure resource costs by applying various policies to resources across multiple subscriptions. It identifies resources that meet specific criteria and applies actions such as scaling, stopping, or deleting them to reduce costs. |
-| finops-toolkit | [https://github.com/microsoft/finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. |
-| lawcostoptseries | [https://github.com/claestom/lawcostoptseries](https://github.com/claestom/lawcostoptseries) | This repository contains KQL queries and an Azure Workbook template to help you analyze and optimize the cost and usage of your Log Analytics workspaces. |
-
 ## Contributing
 We welcome contributions to the BeLux Engineering Experience. If you have a repository you would like to reference here, please, open an issue using the `🧑‍💻 Onboard my repository` template.
 
-**Last updated**: 2025-06-26 14:59:34
