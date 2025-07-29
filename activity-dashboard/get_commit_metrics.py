@@ -47,8 +47,8 @@ total_commits = {h: 0 for h in handles}
 # New metric: Commits by users who are not the repo owner
 non_owner_commits = {h: 0 for h in handles}
 
-# Calculate the date 7 days ago in ISO format
-since_date = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).isoformat().replace('+00:00', 'Z')
+# Calculate the date 100 days ago in ISO format
+since_date = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=100)).isoformat().replace('+00:00', 'Z')
 
 for github_owner, github_repo in repos:
     api_url = f"https://api.github.com/repos/{github_owner}/{github_repo}/commits"
