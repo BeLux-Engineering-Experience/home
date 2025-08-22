@@ -1,6 +1,6 @@
 <p align="center">
   <span style="display: inline-block; width: 30%; border-top: 2px solid #1bbfed; vertical-align: middle;"></span>
-  <img src="logo/belengexplogo.png" alt="Innersource Logo" style="width:20%; vertical-align: middle; margin: 0 10px;" />
+  <img src="logo/belengexplogo.png" alt="BeLux Engineering Experience Logo" style="width:20%; vertical-align: middle; margin: 0 10px;" />
   <span style="display: inline-block; width: 30%; border-top: 2px solid #1bbfed; vertical-align: middle;"></span>
 </p> 
 
@@ -34,4 +34,4 @@ We welcome contributions to the BeLux Engineering Experience. If you have a repo
 
 If you are new to Git, GitHub, or VS Code, we have a step-by-step tutorial to help you get started. See [the getting started guide](./.github/CONTRIBUTING_beginner.md) for detailed instructions.
 
-**Last updated**: 2025-08-22 07:43:34
+**Last updated**: 2025-08-22 07:46:46
