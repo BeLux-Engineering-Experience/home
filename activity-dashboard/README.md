@@ -10,23 +10,23 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | 
 |-------------| --------|
-| [kvaes](https://github.com/kvaes) | 7 | 
-| [claestom](https://github.com/claestom) | 49 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 
+| [kvaes](https://github.com/kvaes) | 7 | 
 | [pmalarme](https://github.com/pmalarme) | 3 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 
+| [claestom](https://github.com/claestom) | 49 | 
 
 ----
 
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
-| [kvaes](https://github.com/kvaes) | 7 | 0 | 
-| [claestom](https://github.com/claestom) | 49 | 0 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
+| [kvaes](https://github.com/kvaes) | 7 | 0 | 
 | [pmalarme](https://github.com/pmalarme) | 3 | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
+| [claestom](https://github.com/claestom) | 49 | 0 | 
 
 ## 🏆 Leaderboard: Top 5 Contributors 
 
@@ -40,4 +40,4 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 ----
 
-**Last updated**: 22-08-2025 06:00:52
+**Last updated**: 23-08-2025 06:01:00
