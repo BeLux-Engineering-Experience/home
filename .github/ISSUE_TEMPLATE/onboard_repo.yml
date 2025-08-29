@@ -22,7 +22,6 @@ body:
     attributes:
       label: Related solution areas
       options:
-        - label: Hackathon
         - label: Infrastructure
         - label: Application Innovation
         - label: AI
