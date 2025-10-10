@@ -25,7 +25,7 @@ jobs:
         name: Setup git
       - name: Commit readme
         run: |
-          git add README.md
+          git add .
           git commit -m "Updated readme"
           git push origin main
           echo "Repository added successfully!"
