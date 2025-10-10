@@ -9,3 +9,4 @@ https://github.com/jamelachahbar/AzureOptimizer,true,false,false,false,false,fal
 https://github.com/microsoft/finops-toolkit,true,false,false,false,false,false,false,false,Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud.
 https://github.com/claestom/lawcostoptseries,true,false,false,false,false,false,false,false,This repository contains KQL queries and an Azure Workbook template to help you analyze and optimize the cost and usage of your Log Analytics workspaces.
 https://github.com/nvandewalle/contoso-creative-writer,false,true,false,false,true,false,false,false,A creative writing multi-agent solution to help users write articles.
+https://github.com/comeredon/mymcp,false,true,false,false,true,false,false,false,An mcp server used to RAG knowledge from pdf using AI search to enahnce GH Copilot
