@@ -10,34 +10,34 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | 
 |-------------| --------|
-| [claestom](https://github.com/claestom) | 5 | 
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 
-| [kvaes](https://github.com/kvaes) | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 2 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
 | [pmalarme](https://github.com/pmalarme) | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 2 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 
+| [kvaes](https://github.com/kvaes) | 0 | 
+| [claestom](https://github.com/claestom) | 3 | 
 
 ----
 
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
-| [claestom](https://github.com/claestom) | 5 | 0 | 
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
-| [kvaes](https://github.com/kvaes) | 0 | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 2 | 2 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
 | [pmalarme](https://github.com/pmalarme) | 0 | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 2 | 2 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
+| [kvaes](https://github.com/kvaes) | 0 | 0 | 
+| [claestom](https://github.com/claestom) | 3 | 0 | 
 
 ## 🏆 Leaderboard: Top 5 Contributors 
 
 | Rank | Contributor | Commits ✅ |
 |------|-------------|---------|
-| 1 | [claestom](https://github.com/claestom) | 5 |
+| 1 | [claestom](https://github.com/claestom) | 3 |
 | 2 | [Nicwalle](https://github.com/Nicwalle) | 2 |
-| 3 | [nvandewalle](https://github.com/nvandewalle) | 0 |
-| 4 | [kvaes](https://github.com/kvaes) | 0 |
-| 5 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
+| 3 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
+| 4 | [pmalarme](https://github.com/pmalarme) | 0 |
+| 5 | [nvandewalle](https://github.com/nvandewalle) | 0 |
 
 ----
 
-**Last updated**: 20-11-2025 05:10:33
+**Last updated**: 21-11-2025 05:11:22
