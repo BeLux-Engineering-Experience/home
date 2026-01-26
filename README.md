@@ -34,4 +34,4 @@ We welcome contributions to the BeLux Engineering Experience. If you have a repo
 
 If you are new to Git, GitHub, or VS Code, we have a step-by-step tutorial to help you get started. See [the getting started guide](./.github/CONTRIBUTING_beginner.md) for detailed instructions.
 
-**Last updated**: 2025-10-10 12:49:19
+**Last updated**: 2026-01-26 11:05:44

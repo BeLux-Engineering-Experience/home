@@ -7,3 +7,4 @@
 | [finops-toolkit](https://github.com/microsoft/finops-toolkit) | Tools and resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. |
 | [lawcostoptseries](https://github.com/claestom/lawcostoptseries) | This repository contains KQL queries and an Azure Workbook template to help you analyze and optimize the cost and usage of your Log Analytics workspaces. |
 | [PSRule.Rules.Azure](https://github.com/claestom/PSRule.Rules.Azure) | Policy enforcement for IaC deployments. |
+| [Workbooks.git](https://github.com/jamelachahbar/Workbooks.git) | This repo contains several Azure Workbooks that can be reused, adapted and enhanced |
