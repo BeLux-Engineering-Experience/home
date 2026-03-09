@@ -10,23 +10,23 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | 
 |-------------| --------|
-| [pmalarme](https://github.com/pmalarme) | 1 | 
 | [kvaes](https://github.com/kvaes) | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 
-| [claestom](https://github.com/claestom) | 12 | 
+| [pmalarme](https://github.com/pmalarme) | 1 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
 | [Nicwalle](https://github.com/Nicwalle) | 0 | 
+| [claestom](https://github.com/claestom) | 12 | 
 
 ----
 
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
-| [pmalarme](https://github.com/pmalarme) | 1 | 1 | 
 | [kvaes](https://github.com/kvaes) | 0 | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
-| [claestom](https://github.com/claestom) | 12 | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 1 | 1 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
 | [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
+| [claestom](https://github.com/claestom) | 12 | 0 | 
 
 ## 🏆 Leaderboard: Top 5 Contributors 
 
@@ -40,4 +40,4 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 ----
 
-**Last updated**: 08-03-2026 06:03:24
+**Last updated**: 09-03-2026 06:13:38
