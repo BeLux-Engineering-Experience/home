@@ -10,34 +10,34 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | 
 |-------------| --------|
-| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
-| [pmalarme](https://github.com/pmalarme) | 1 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 
 | [kvaes](https://github.com/kvaes) | 0 | 
-| [claestom](https://github.com/claestom) | 11 | 
+| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
+| [claestom](https://github.com/claestom) | 0 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 
 
 ----
 
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
-| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
-| [pmalarme](https://github.com/pmalarme) | 1 | 1 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
 | [kvaes](https://github.com/kvaes) | 0 | 0 | 
-| [claestom](https://github.com/claestom) | 11 | 0 | 
+| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
+| [claestom](https://github.com/claestom) | 0 | 0 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
 
 ## 🏆 Leaderboard: Top 5 Contributors 
 
 | Rank | Contributor | Commits ✅ |
 |------|-------------|---------|
-| 1 | [claestom](https://github.com/claestom) | 11 |
-| 2 | [pmalarme](https://github.com/pmalarme) | 1 |
-| 3 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
-| 4 | [Nicwalle](https://github.com/Nicwalle) | 0 |
-| 5 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 1 | [kvaes](https://github.com/kvaes) | 0 |
+| 2 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
+| 3 | [claestom](https://github.com/claestom) | 0 |
+| 4 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 5 | [pmalarme](https://github.com/pmalarme) | 0 |
 
 ----
 
-**Last updated**: 09-04-2026 07:42:00
+**Last updated**: 10-04-2026 07:50:58
