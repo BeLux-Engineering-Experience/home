@@ -10,10 +10,10 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | 
 |-------------| --------|
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 
-| [kvaes](https://github.com/kvaes) | 0 | 
 | [Nicwalle](https://github.com/Nicwalle) | 0 | 
-| [claestom](https://github.com/claestom) | 5 | 
+| [kvaes](https://github.com/kvaes) | 0 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 
+| [claestom](https://github.com/claestom) | 1 | 
 | [pmalarme](https://github.com/pmalarme) | 2 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
 
@@ -21,10 +21,10 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
-| [kvaes](https://github.com/kvaes) | 0 | 0 | 
 | [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
-| [claestom](https://github.com/claestom) | 5 | 0 | 
+| [kvaes](https://github.com/kvaes) | 0 | 0 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
+| [claestom](https://github.com/claestom) | 1 | 0 | 
 | [pmalarme](https://github.com/pmalarme) | 2 | 2 | 
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
 
@@ -32,12 +32,12 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Rank | Contributor | Commits ✅ |
 |------|-------------|---------|
-| 1 | [claestom](https://github.com/claestom) | 5 |
-| 2 | [pmalarme](https://github.com/pmalarme) | 2 |
-| 3 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 1 | [pmalarme](https://github.com/pmalarme) | 2 |
+| 2 | [claestom](https://github.com/claestom) | 1 |
+| 3 | [Nicwalle](https://github.com/Nicwalle) | 0 |
 | 4 | [kvaes](https://github.com/kvaes) | 0 |
-| 5 | [Nicwalle](https://github.com/Nicwalle) | 0 |
+| 5 | [nvandewalle](https://github.com/nvandewalle) | 0 |
 
 ----
 
-**Last updated**: 05-06-2026 09:56:14
+**Last updated**: 06-06-2026 08:43:59
