@@ -11,10 +11,10 @@ Below is a summary of the total commits for each contributor in the last 30 days
 | Contributor  | Commits ✅ | 
 |-------------| --------|
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
-| [claestom](https://github.com/claestom) | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 
-| [pmalarme](https://github.com/pmalarme) | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 
+| [claestom](https://github.com/claestom) | 0 | 
 | [kvaes](https://github.com/kvaes) | 0 | 
 
 ----
@@ -22,10 +22,10 @@ Below is a summary of the total commits for each contributor in the last 30 days
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
 | [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
-| [claestom](https://github.com/claestom) | 0 | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
-| [pmalarme](https://github.com/pmalarme) | 0 | 0 | 
 | [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
+| [claestom](https://github.com/claestom) | 0 | 0 | 
 | [kvaes](https://github.com/kvaes) | 0 | 0 | 
 
 ## 🏆 Leaderboard: Top 5 Contributors 
@@ -33,11 +33,11 @@ Below is a summary of the total commits for each contributor in the last 30 days
 | Rank | Contributor | Commits ✅ |
 |------|-------------|---------|
 | 1 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
-| 2 | [claestom](https://github.com/claestom) | 0 |
-| 3 | [Nicwalle](https://github.com/Nicwalle) | 0 |
-| 4 | [pmalarme](https://github.com/pmalarme) | 0 |
-| 5 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 2 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 3 | [pmalarme](https://github.com/pmalarme) | 0 |
+| 4 | [Nicwalle](https://github.com/Nicwalle) | 0 |
+| 5 | [claestom](https://github.com/claestom) | 0 |
 
 ----
 
-**Last updated**: 16-08-2026 06:22:03
+**Last updated**: 17-08-2026 06:27:22
