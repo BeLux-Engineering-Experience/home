@@ -10,34 +10,34 @@ Below is a summary of the total commits for each contributor in the last 30 days
 
 | Contributor  | Commits ✅ | 
 |-------------| --------|
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 
-| [kvaes](https://github.com/kvaes) | 0 | 
-| [pmalarme](https://github.com/pmalarme) | 0 | 
-| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
 | [claestom](https://github.com/claestom) | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 
+| [kvaes](https://github.com/kvaes) | 0 | 
+| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 
 
 ----
 
 | Contributor  | Commits ✅ | Cross  repo commits 🆘 |
 |-------------| --------| --------|
-| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
-| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
-| [kvaes](https://github.com/kvaes) | 0 | 0 | 
-| [pmalarme](https://github.com/pmalarme) | 0 | 0 | 
-| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
 | [claestom](https://github.com/claestom) | 0 | 0 | 
+| [Nicwalle](https://github.com/Nicwalle) | 0 | 0 | 
+| [nvandewalle](https://github.com/nvandewalle) | 0 | 0 | 
+| [kvaes](https://github.com/kvaes) | 0 | 0 | 
+| [jamelachahbar](https://github.com/jamelachahbar) | 0 | 0 | 
+| [pmalarme](https://github.com/pmalarme) | 0 | 0 | 
 
 ## 🏆 Leaderboard: Top 5 Contributors 
 
 | Rank | Contributor | Commits ✅ |
 |------|-------------|---------|
-| 1 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 1 | [claestom](https://github.com/claestom) | 0 |
 | 2 | [Nicwalle](https://github.com/Nicwalle) | 0 |
-| 3 | [kvaes](https://github.com/kvaes) | 0 |
-| 4 | [pmalarme](https://github.com/pmalarme) | 0 |
+| 3 | [nvandewalle](https://github.com/nvandewalle) | 0 |
+| 4 | [kvaes](https://github.com/kvaes) | 0 |
 | 5 | [jamelachahbar](https://github.com/jamelachahbar) | 0 |
 
 ----
 
-**Last updated**: 26-08-2026 06:26:14
+**Last updated**: 27-08-2026 16:48:45
